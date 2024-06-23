@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #ECF0F1;
+}
+.navbar{
+    background-color:  #8E44AD;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.nav-barlink{
+    display: flex;
+    column-gap: 20px;
+    
+}
+.nav-barlink a{
+    text-decoration: none;
+    color: #E1BEE7;
+}
+.nav-barlink a:hover{
+    color: #FFFFFF;
+
+}
+.nav-menu{
+    display: none;
+}
+
+.sidebar{
+    background-color: #8E44AD;
+    color:#FFFFFF;
+    width: 40%;
+    top: 0;
+    height: 100%;
+    right: -60%;
+    padding: 15px;
+    position: fixed;
+    transition: 1.5s;
+    z-index: 2;
+
+    
+    
+}
+.side-links{
+    margin-bottom: 30px;
+}
+
+.side-barlink a{
+    text-decoration: none;
+    color:#E1BEE7;
+}
+.side-barlink a:hover{
+   color: #FFFFFF;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding:50px;
+    gap: 50px;
+    
+
+}
+.header-button{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 0;
+    background-color: #E1BEE7 ;
+    color:  #2C3E50 ;
+    cursor: pointer;
+}
+
+.service{
+    padding: 10px;
+}
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container2 div{
+    background-color: #D7BDE2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.newarrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom:10px;
+    border:solid black 3px;
+}
+.news button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: #E1BEE7;
+    color: #2C3E50;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+    
+}
+.footer{
+    background-color: #8E44AD;
+    color: #FFFFFF;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.product-section{
+    margin-top: 20px;
+
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+
+}
+.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 10px;
+
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img{
+    border-radius: 10px;
+}
+
+.main{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact {
+    background-color: #D7BDE2; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+.contact-container{
+    padding: 10px;
+}
+
+.container-search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+.contact-container-button{
+    background-color: #8E44AD; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-container-button:hover {
+    background-color: #732D91; /* Darker Wisteria on hover */
+}
+
+@media screen and (max-width:640px){
+    .nav-menu{
+        display: block;
+    }
+    .nav-barlink{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+
+    
+}
